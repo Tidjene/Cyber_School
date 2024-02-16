@@ -1,0 +1,58 @@
+form fieldset{
+  background-image:url("./accueil.jpeg");
+}
+legend{
+  color:yellow;
+}
+h1{
+  color: yellow;
+  font-family:verdana;
+  }
+ul{
+  position:fixed;
+  top:0;
+  width:100%;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#000000 ;
+}
+li{
+  float:left;
+}
+li a{
+  display:block;
+  color:white;
+  text-align:center;
+  padding:20 22 20 22;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:bold;
+  
+}
+p{
+  margin-left:5px;
+  margin-right:5px;
+}
+li a:hover{
+  background-color:#fefb41;
+}
+nav{
+  position:relative;
+}
+li a:active{
+  background-color:white;
+}
+body {
+background-image:url("./background.jpeg");
+color :white ;
+}
+footer a{
+  color:white;
+  margin-right:40px;
+  margin-left: 40px;
+}
+i{
+  font-size:60px;
+}

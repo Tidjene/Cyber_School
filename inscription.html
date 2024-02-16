@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">  
+  <title>Inscription</title>
+  <link href="inscription.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <nav class="navbar">
+    <ul class="list">
+        <li><a  href="index.php">Home</a></li>
+        <li><a  href="formation.html">Formations</a></li>
+        <li><a  href="formulaire.html">Informations</a></li>
+        <li><a  href="inscription.html">Inscription</a></li>
+        <li><a href="propos.html">About us</a></li> 
+    </ul>
+    </nav>
+  <p>Saisissez vos informations. <br>Nous analyserons votre dossier et vous contacterons .</p>
+<form method="POST" action="donneesinscription.php" enctype="multipart/form-data" style="width:100%;">
+ <fieldset border=1 style="width=50%;"">
+  <legend><h4 style="color:white;">Candidature </h4></legend>
+    <div>
+      <label for "nom">Nom</label><br>
+      <input type="text" id="nom" name="nom" placeholder="Nom"required=True/>   
+    </div>
+<br/> 
+    <div>
+     <label for"Prenom">Prenom</label><br>
+     <input type="text" name="prenom" placeholder="Prénom "required=True/>
+    </div>
+<br>   
+    <div>
+     <label for="sexe">Sexe </label>
+    </div>
+<br>
+    <div>
+      <label for="masculin">Masculin</label>
+      <input type="radio" id="feminin" name="sexe" value="feminin">
+    </div>
+<br>   
+    <div>
+      <label for="feminin">Féminin</label>
+      <input type="radio" id="feminin" name="sexe" value="feminin">
+    </div>
+<br>
+    <div>
+     <label for"age">Date de naissance</label><br>
+     <input type="date" id="date" required="True"/>
+    </div>
+<br>
+    <div>
+     <label for"nationalite">Nationalité</label><br>
+     <input type="text" name="nationalite" placeholder="Nationalité "required=True/>
+    </div>
+<br>
+   <div>
+  <label for ="email">E-mail</label><br>
+  <input type="email" name="email" placeholder="nom@example.domaine" required="true"/>
+</div>
+    <div>
+      <label for "Cycle">Licence</label>
+      <input type="radio" name="cycle" value="Licence">
+    </div>
+<br>
+    <div>
+      <label for "Cycle">Master</label>
+      <input type="radio" name="cycle" value="Master">
+    </div>
+<br>
+    <div>
+      <label for "CV">Votre CV</label>
+      <input type="file" name="CV" value="">
+    </div>
+<br>   
+    <div> 
+     <label for "motivation">Lettre de motivation</label>
+     <input type="file" name="motivation" required="true" value="">
+    </div>
+<br>
+    <div>
+      <label for "notes">Releves de notes des deux dernieres annees</label>
+      <input type="file" name="note1" required="true" value="">
+     <input type="file" name="note2" required="true" value="">
+</div>
+<br>
+   <div>
+     <label for "Commentaire">Vos attentes</label>
+    <textarea name="commentaire" placeholder="Dites nous de facon brieve ce que vous attendez de la Cyber School" rows=8 cols=40></textarea><br>
+    <input type="reset" value="Annuler"/>
+    <input type="submit" value="Envoyer"/>
+   </div>
+ </fieldset>
+</form>
+  <hr>
+     <footer>
+      <h1 style="color:white;">Contactez nous sur:</h1>
+     <b> <a href="https://www.facebook.com/tidiano.odglecharo?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://instagram.com/tidianoodg?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="http://linkedin.com/in/tidjène-ouédraogo-783587244"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com/tidjene"><i class="fa-brands fa-square-twitter"></i></a>
+     </b>
+    </footer>
+
+</body>
+
+</html>

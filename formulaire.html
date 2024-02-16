@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">  
+  <title>Formulaire</title>
+  <link href="formulaire.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-image:url('./background.jpeg');">
+   <nav class="navbar">
+    <ul class="list">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="formation.html">Formations</a></li>
+        <li><a href="formulaire.html">Informations</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="propos.html">About us</a></li> 
+      </ul  
+    </nav>
+  <p>Remplissez le formulaire.<br>Nous récupérerons vos données afin de vous recontacter .</p>
+<form method="GET" action="donneesformulaire.php" class="monformulaire" >
+ <fieldset border=1 style="width:40%;" >
+  <legend><h4>Informations du candidat </h4></legend>
+    <div>
+      <label for "nom">Nom</label><br>
+      <input type="text" id="nom" name="nom" placeholder="Nom"required=True/>   
+   </div>
+<br>
+<div>
+  <label for"Prenom">Prenom</label><br>
+  <input type="text" id="Prenom" name="prenom" placeholder="Prénom " required=True/>
+</div><br>
+<label for="sexe">Sexe </label><br>
+<div>
+   <input type="radio" id="masculin" name="sexe" value="masculin">
+<label for="masculin">Masculin</label>
+</div>
+   <div>
+  <input type="radio" id="feminin" name="sexe" value="feminin">
+<label for="feminin">Féminin</label></div>
+   <br>
+   <div>
+  <label for="age">Date de naissance</label><br>
+  <input type="date" name="date" required=True/>
+</div>
+   <br/>
+   <div>
+  <label for "nationalite">Nationalité</label><br>
+  <input type="text" name="nationalite" placeholder="Nationalité " required="True"/>
+   </div>
+<br>
+<div>
+  <label for ="email">E-mail</label><br>
+  <input type="email" name="email" placeholder="nom@example.domaine" required="true"/>
+</div> <br>
+  <div>
+  <textarea name="commentaire" placeholder="Rediger votre message ici" rows=8 cols=35></textarea>
+  <input type="reset" value="Annuler"/>
+  <input type="submit" name="envoyer" value="Envoyer"/>
+</div>
+   </div>
+ </fieldset>
+</form>
+  <hr>
+     <footer>
+      <h1>Contactez nous sur:</h1>
+       <div class="contact">
+     <b> <a href="https://www.facebook.com/tidiano.odglecharo?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://instagram.com/tidianoodg?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="http://linkedin.com/in/tidjène-ouédraogo-783587244"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com/tidjene"><i class="fa-brands fa-square-twitter"></i></a>
+     </b>
+       </div>
+    </footer>
+
+</body>
+
+</html>
